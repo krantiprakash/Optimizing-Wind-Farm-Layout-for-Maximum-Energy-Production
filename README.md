@@ -23,15 +23,19 @@ We use Jensen's wake model to account for the wake effect, which is crucial for 
 **Results**
 
     -Initial power output: 273.55 MW
-   - Optimized power output: 285.23 MW
-   - Improvement: 11.68 MW (4.26% increase)
+    -Optimized power output: 285.23 MW
+    -Improvement: 11.68 MW (4.26% increase)
 
 **Code Implementation**
 
 The implementation includes the following main components:
 
 1.) Reads wind speed data from a CSV file.
+
 2.) Calculates each turbine's power and applies the wake model.
+
 3.) Defines an objective function to maximize energy output while applying penalties for insufficient spacing.
+
 4.) Uses gradient descent to adjust turbine positions.
+
 5.) Displays the optimized layout.
